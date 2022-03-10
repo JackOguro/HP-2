@@ -1,0 +1,394 @@
+@charset "UTF-8";
+
+.top_service_inner {
+  background: url(../img/service_2.png);
+  background-size: cover;
+}
+
+.top_nav {
+  position: relative;
+}
+
+.top_list {
+  background-color:  #212836;
+  width: 70%;
+  margin-left: auto;
+  position: absolute;
+  bottom: -55px;
+  right: 0;
+}
+
+.top_list ul {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.top_item a{
+  color: #e9eff2;
+  font-size: 2em;
+  line-height: 4;
+  display: inline-block;
+}
+
+.top_item a:hover {
+  opacity: 0.5;
+}
+
+.service_wrapper {
+  width: 90%;
+  height: 18em;
+  background: url(../img/consulting_2.png);
+  background-size: contain;
+  padding: 5%;
+  clip-path: polygon(0% 0%, 0% 100%, 100% 0);
+  position: relative;
+}
+
+.reverse_wrapper {
+  width: 90%;
+  height: 18em;
+  background: url(../img/consulting_2.png);
+  background-size: contain;
+  padding: 5%;
+  clip-path: polygon(0% 0%, 100% 100%, 100% 0);
+  position: relative;
+}
+
+.service_wrapper::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: #e9eff2;
+  opacity: 0.9;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.reverse_wrapper::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: #e9eff2;
+  opacity: 0.9;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.service_intro {
+   margin-bottom: 1.5%;
+   position: relative;
+   z-index: 1;
+}
+
+.section_ttl {
+  line-height: 1.3;
+}
+
+.service_txt {
+  width: 50%;
+  position: relative;
+  z-index: 1;
+  font-size: 14px;
+}
+
+.service_all {
+  position: relative;
+}
+
+.service_list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.service_item {
+  position: relative;
+  width: 47.5%;
+  height: 47.5%;
+  overflow: hidden;
+  box-shadow: 10px 10px 20px #ddd;
+  margin: 10% 0;
+  z-index: 1;
+}
+
+.service_item._service1 {
+  bottom: 15em;
+  right: 1em;
+}
+
+.service_item._service2 {
+  bottom: 25em;
+}
+
+.service_item._service3 {
+  bottom: 25em;
+  margin-bottom: 0;
+  right: 1em;
+}
+
+.service_item._service4 {
+  bottom: 35em;
+  margin-bottom: 0;
+}
+
+.service_img {
+  position: relative;
+  width: 100%;
+  height: 20em;
+  z-index: -1;
+}
+
+.service_img::after {
+  content: "";
+  position: absolute;
+  width: 70%;
+  height: 40em;
+  background: #ffffff;
+  transform: rotate(-13deg);
+  right: 45%;
+  top: -5.5%;
+}
+
+.service_img._service {
+  background: url(../img/consulting.png) no-repeat center;
+  background-size: cover;
+}
+
+.service_inner_txt {
+  position: absolute;
+  top: 10%;
+  left: 0;
+  width: 50%;
+}
+
+.service_sub_ttl {
+  font-size: 1.2em;
+}
+
+.service_ttl {
+  display: inline;
+  font-size: 1.75em;
+  font-weight: 700;
+  background: linear-gradient(transparent 80%, #75a9ff);
+}
+
+.reverse_intro {
+  position: relative;
+  width: 30%;
+  margin-left: auto;
+  margin-bottom: 1.5%;
+  text-align: right;
+}
+
+.reverse_txt {
+  width: 50%;
+  position: relative;
+  margin-left: auto;
+  font-size: 14px;
+}
+
+.service_item._reverse1 {
+  bottom: 25em;
+}
+
+.service_item._reverse2 {
+  bottom: 15em;
+  left: 1em;
+}
+
+.service_item._reverse3 {
+  bottom: 35em;
+  margin-bottom: 0;
+}
+
+.service_item._reverse4 {
+  bottom: 25em;
+  margin-bottom: 0;
+  left: 1em;
+}
+
+.service_block {
+  height: 70em;
+}
+
+footer {
+  margin: unset;
+  margin-top: 20%;
+}
+
+@media screen and (max-width: 1024px) {
+.service_ttl {
+  font-size: 1.4em;
+}
+
+}
+
+@media screen and (max-width: 768px) {
+.top_list {
+  bottom: -47px;
+}
+
+.top_item a {
+  font-size: 1.5em;
+}
+
+.service_txt {
+ font-size: 10px;
+}
+
+.service_img {
+  height: 15em;
+}
+
+.service_inner_txt {
+  top: 10%;
+}
+
+.service_descript {
+  font-size: 10px;
+  width: 89%;
+  margin-top: 15%;
+}
+
+.service_ttl {
+  font-size: 1em;
+}
+
+.service_sub_ttl {
+  font-size: 0.8em;
+}
+
+.service_item._service1 {
+  bottom: 12.5em
+}
+
+.service_item._service2 {
+  bottom: 20em;
+}
+
+.service_item._service3 {
+  bottom: 20em;
+}
+
+.service_item._service4 {
+  bottom: 27.5em;
+}
+
+.service_block {
+  height: 55em;
+}
+
+.service_item._reverse1 {
+  bottom: 20em;
+}
+
+.service_item._reverse2 {
+  bottom: 12.5em
+}
+
+.service_item._reverse3 {
+  bottom: 27.5em;
+}
+
+.service_item._reverse4 {
+  bottom: 20em;
+}
+
+}
+
+@media screen and (max-width: 480px) {
+.top_list {
+  bottom: -19px;
+}
+
+.top_item a {
+  font-size: 10px;
+}
+
+.service_txt {
+  width: 100%;
+  font-size: 14px;
+}
+
+.service_wrapper {
+  width: 90%;
+  clip-path: unset;
+  height: unset;
+}
+
+.service_block {
+  height: unset;
+}
+
+.service_intro {
+  margin-bottom: 2.5%
+}
+
+.service_list {
+  display: unset;
+}
+
+.service_item {
+  width: 100%;
+  position: unset;
+}
+
+.service_inner_txt {
+  left: 1.5%;
+}
+
+.service_item._service1 .service_inner_txt {
+  top: 2.5%;
+}
+
+.service_item._service2 .service_inner_txt {
+  top: 27.5%;
+}
+
+.service_item._service3 .service_inner_txt {
+  top: 53.5%;
+}
+
+.service_item._service4 .service_inner_txt {
+  top: 79.5%;
+}
+
+.service_block_2 {
+  margin-bottom: 30%;
+}
+
+.reverse_wrapper {
+  width: 90%;
+  clip-path: unset;
+  height: unset;
+}
+
+.reverse_intro {
+  text-align: unset;
+  width: unset;
+}
+
+.reverse_txt {
+  width: unset;
+}
+
+.service_item._reverse1 .service_inner_txt {
+  top: 2.5%;
+}
+
+.service_item._reverse2 .service_inner_txt {
+  top: 27.5%;
+}
+
+.service_item._reverse3 .service_inner_txt {
+  top: 53.5%;
+}
+
+.service_item._reverse4 .service_inner_txt {
+  top: 79.5%;
+}
+
+}
